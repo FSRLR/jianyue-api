@@ -1,7 +1,7 @@
 package com.soft1721.jianyue.api.service.impl;
 
-import com.soft1721.jianyue.api.entitiy.User;
-import com.soft1721.jianyue.api.entitiy.dto.UserDTO;
+import com.soft1721.jianyue.api.entity.User;
+import com.soft1721.jianyue.api.entity.dto.UserDTO;
 import com.soft1721.jianyue.api.service.UserService;
 import com.soft1721.jianyue.api.util.StatusConst;
 import com.soft1721.jianyue.api.util.StringUtil;

@@ -1,7 +1,7 @@
 package com.soft1721.jianyue.api.service;
 
-import com.soft1721.jianyue.api.entitiy.User;
-import com.soft1721.jianyue.api.entitiy.dto.UserDTO;
+import com.soft1721.jianyue.api.entity.User;
+import com.soft1721.jianyue.api.entity.dto.UserDTO;
 
 public interface UserService {
 
@@ -24,4 +24,13 @@ public interface UserService {
     void updateUser(User user);
 
     User getUserById(int userId);
+
+
+    /**
+     * 用户注册方法
+     * @param userDTO
+     * @return int
+     */
+    void signUp(UserDTO userDTO);
+
 }

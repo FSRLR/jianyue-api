@@ -1,10 +1,7 @@
 package com.soft1721.jianyue.api.mapper;
 
-import com.soft1721.jianyue.api.entitiy.User;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import com.soft1721.jianyue.api.entity.User;
+import org.apache.ibatis.annotations.*;
 
 public interface UserMapper {
 
@@ -26,4 +23,8 @@ public interface UserMapper {
 
     @Select("SELECT * FROM t_user WHERE id = #{id} ")
     User getUserId(int id);
+
+    @Insert("INSERT INTO t_user(mobile,password,nickname,avatar,regtime,status)" +
+            " VALUES(#{mobile}, #{password}, #{nickname},#{avatar},#{regtime},#{status}) ")
+    void insert(User user);
 }

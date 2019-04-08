@@ -1,11 +1,13 @@
 package com.soft1721.jianyue.api.util;
+
+import lombok.Data;
+import lombok.Setter;
+
 /**
  * 封装统一的响应体
  * 调用 ResponseResult.success() 或 ResponseResult.success(Object data),
  * 不需要返回数据时调用前者, 需要返回数据时调用后者
  */
-import lombok.Data;
-
 @Data
 public class ResponseResult {
     private int code;
