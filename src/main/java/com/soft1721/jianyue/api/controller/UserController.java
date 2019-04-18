@@ -43,9 +43,9 @@ public class UserController {
             }
         }
     }
-    @GetMapping(value = "/{id}")
-    public ResponseResult getUserId(@PathVariable("id") int id){
-        User user=userService.getUserById(id);
+    @GetMapping("/{id}")
+    public ResponseResult getUserById(@PathVariable("id") int id){
+        User user = userService.getUserById(id);
         return ResponseResult.success(user);
     }
 
@@ -104,8 +104,8 @@ public class UserController {
         if (user != null) {
             return ResponseResult.error(StatusConst.MOBILE_EXIST, MsgConst.MOBILE_EXIST);
         } else {
-            String verifyCode = SMSUtil.send(mobile);
-            /*String verifyCode = StringUtil.getVerifyCode();*/
+            /*String verifyCode = SMSUtil.send(mobile);*/
+            String verifyCode = StringUtil.getVerifyCode();
             System.out.println(verifyCode);
             redisService.set(mobile, verifyCode);
             return ResponseResult.success();

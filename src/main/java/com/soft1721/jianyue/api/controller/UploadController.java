@@ -16,7 +16,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping(value = "/api")
 public class UploadController {
-    @PostMapping("/avatar/upload")
+    @PostMapping("/upload")
     public String ossUpload(@RequestParam("file") MultipartFile sourceFile) {
         String endpoint = "http://oss-cn-shanghai.aliyuncs.com";
         String accessKeyId = "LTAIb4yR6H2XY2kU";

@@ -26,5 +26,17 @@ public class ArticleServiceImplTest {
 
     @Test
     public void getArticleById() {
+        System.out.println(articleService.getArticleById(1));
+    }
+
+    @Test
+    public void getArticleByUId(){
+        List<ArticleVO> articleVO=articleService.selectByuId(1);
+        System.out.println(articleVO);
+    }
+
+    @Test
+    public void deleteArticleById(){
+        articleService.deleteArticleById(1);
     }
 }

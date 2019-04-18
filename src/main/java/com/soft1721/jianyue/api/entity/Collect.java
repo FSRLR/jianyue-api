@@ -2,11 +2,9 @@ package com.soft1721.jianyue.api.entity;
 
 import lombok.Data;
 
-import java.util.List;
-
 @Data
-public class Img {
+public class Collect {
     private Integer id;
-    private Integer aId;
-    private String imgUrl;
+    private Integer fromUId;
+    private Integer toAId;
 }

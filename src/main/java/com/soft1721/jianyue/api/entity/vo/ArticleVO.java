@@ -16,4 +16,5 @@ public class ArticleVO {
     private String nickname;
     private String avatar;
     private List<Img> imgs;
+    private Integer comments;
 }

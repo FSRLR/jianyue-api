@@ -9,4 +9,8 @@ public class MsgConst {
     public static final String MOBILE_EXIST = "手机号已被注册";
     public static final String VERIFYCODE_ERROR = "验证码错误";
     public static final String VERIFYCODE_timeout = "验证码已过期";
+    public static final String FOLLOWED ="已关注";
+    public static final String NO_FOLLOWED = "已取消关注";
+    public static final String COLLECTED="已收藏";
+    public static final String NO_COLLECTED="已取消收藏";
 }
